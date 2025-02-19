@@ -1,0 +1,23 @@
+@import url("styles/header.css");
+@import url("styles/about.css");
+@import url("styles/work.css");
+@import url("styles/education.css");
+@import url("styles/projects.css");
+@import url("styles/contact.css");
+@import url("styles/rodape.css");
+
+:root {
+    --branco: #FFFFFF;
+    --branco-1: #f7f7f7;
+    --branco-2: #EBECEE;
+    --preto-claro: #131313;
+    --cinza: #474646;
+    --cinza-medio: #828282;
+    --cinza-claro: #858585;
+}
+
+body {
+    background-color: var(--branco-1);
+    font-size: 16px;
+    font-weight: 400;
+}
