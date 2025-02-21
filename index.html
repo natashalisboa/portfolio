@@ -8,6 +8,8 @@
     <title>Natasha Lisboa</title>
     <!-- <link rel="stylesheet" href="reset.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <!-- <iframe name="iframe_download" class="hidden"></iframe> -->
 </head>
@@ -16,20 +18,33 @@
 
     <header class="header">
         <nav class="container">
-
-            <a class="options__link" href="index.html">Sobre mim</a>
-            <a class="options__link" href="#">Trabalho</a>
-            <a class="options__link" href="#">Educação</a>
-            <a class="options__link" href="#">Projetos</a>
-            <a class="options__link" href="#">Contato</a>
+            <a class="options__link" href="index.html">
+                <span class="options__link__number">01.</span> <span class="options__link__text">Sobre</span>
+            </a>
+            <a class="options__link" href="#">
+                <span class="options__link__number">02.</span> <span class="options__link__text">Trabalho</span>
+            </a>
+            <a class="options__link" href="#">
+                <span class="options__link__number">03.</span> <span class="options__link__text">Educação</span>
+            </a>
+            <a class="options__link" href="#">
+                <span class="options__link__number">04.</span> <span class="options__link__text">Projetos</span>
+            </a>
+            <a class="options__link" href="#">
+                <span class="options__link__number">05.</span> <span class="options__link__text">Contato</span>
+            </a>
         </nav>
     </header>
 
 
     <main class="presentation">
         <section class="about">
-            <h1 class="about__title">Natasha Lisboa</h1>
-            <h3 class="about__subtitle">DESENVOLVEDORA FULL-STACK E CRIADORA DE CONTEÚDO</h3>
+            <h2><span class="options__title__number">01.</span> <span class="options__title__text">Sobre</span></h2>
+            <br>
+            <h3 class="about__subtitle__name">Natasha Lisboa</h3>
+            <h3 class="about__subtitle">Desenvolvedora Full-Stack e Criadora de Conteúdo</h3>
+
+            <br>
             <p class="about__text">Formada em Lazer e Turismo pela EACH-USP (2018) e em Análise e Desenvolvimento de
                 Sistemas pela Universidade
                 Presbiteriana Mackenzie (2021), pós graduanda em Full-Stack (2025) pela FIAP, morando e trabalhando em
@@ -46,6 +61,7 @@
             <p>
                 e-mail: contato@natashalisboa.com | número: 11 xxxxxxxx
             </p>
+            <br>
 
             <a class="cv__link" href="/caminho/para/download.pdf">Download Currículo</a>
         </section>
@@ -54,7 +70,8 @@
 
     <section class="work">
         <div class="work__container">
-            <h2><span class="highlight">Trabalho</span></h2>
+            <h2><span class="options__title__number">02.</span> <span class="options__title__text">Trabalho</span></h2>
+            <br>
             <div class="menu">
                 <button onclick="showExperience(0)">PBF</button>
                 <button onclick="showExperience(1)">Teresa Perez Tours</button>
@@ -64,13 +81,13 @@
             <div class="carousel">
                 <div class="carousel-item">
                     <h3>PBF | Professora de Inglês</h3>
-                    <p>Mar 2016 – presente</p>
+                    <p>Mar 2016 — presente</p>
                     <p>Descrição da experiência...</p>
                     <img class="logo__image" src="./assets/logos/multiplyfriendslanguages_logo.jfif" alt="Logo da FISK">
                 </div>
                 <div class="carousel-item">
                     <h3>Teresa Perez Tours | Assistente de Operações</h3>
-                    <p>Mar 2016 – presente</p>
+                    <p>Mar 2016 — presente</p>
                     <p>Descrição da experiência...</p>
                     <img class="logo__image" src="./assets/logos/teresa_perez_tours_logo.jfif"
                         alt="Logo da Teresa Perez Tours">
@@ -78,13 +95,13 @@
             </div>
             <div class="carousel-item active">
                 <h3>Accenture | Developer</h3>
-                <p>Mar 2016 – presente</p>
+                <p>Mar 2016 — presente</p>
                 <p>Descrição da experiência...</p>
                 <img class="logo__image" src="./assets/logos/accenture_logo.jfif" alt="Logo da Accenture">
             </div>
         </div>
-       
-   
+
+
 
         <script>
             function showExperience(index) {
@@ -102,18 +119,20 @@
 
     </section>
     <section>
-        <h2 class="education">Educação</h2>
+        <h2 class="education"><span class="options__title__number">03.</span> <span class="options__title__text">Educação</span></h2>
+            
     </section>
     <section>
-        <h2 class="projects">Projetos</h2>
+        <h2 class="projects"><span class="options__title__number">04.</span> <span class="options__title__text">Projetos</span></h2>
     </section>
     <section>
-        <h2 class="contact">Contato</h2>
+        <h2 class="contact"><span class="options__title__number">05.</span> <span class="options__title__text">Contato</span></h2>
+       
     </section>
 </body>
 
 <footer class="footer">
-    <p class="footer__title">Natasha Lisboa</p>
+    <p class="footer__title">Natasha Lisboa | @na2kstudies</p>
 </footer>
 
 </html>

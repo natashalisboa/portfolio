@@ -7,13 +7,27 @@
 @import url("styles/rodape.css");
 
 :root {
+    --fonte-principal: "Poppins";
+    --fonte-secundaria: "Josefin Sans";
+    --fonte-terciaria: "";
     --branco: #FFFFFF;
-    --branco-1: #f7f7f7;
-    --branco-2: #EBECEE;
-    --preto-claro: #131313;
+    --branco-primaria: #EEEEEE;
+    --branco-secundaria: #f7f7f7;
+    --branco-terciaria: #EBECEE;
+    --preto: #000000;
+    --preto-primaria: #131313;
+    --preto-secundaria: #1A1A19;
+    --preto-terciaria: #121212;
     --cinza: #474646;
     --cinza-medio: #828282;
     --cinza-claro: #858585;
+    --vermelho: #8E1616;
+    --vermelho-primaria: #AB3130;
+    --vermelho-secundaria: #67191F;
+    --verde: #31511E;
+    --verde-primaria: #294122;
+    --verde-secundaria: #162114; 
+    --cor-destaque: #EEDBBF;
 }
 
 *{
@@ -23,14 +37,15 @@
 
 body {
     box-sizing: border-box;
-    background-color: var(--branco-1);
+    background-color: var(--branco-secundaria);
     font-size: 16px;
     font-weight: 400;
+    font-family: var(--fonte-principal);
 }
 
 .header {
-    padding: 2% 0 0 15%;
-    background-color: var(--preto-claro);
+    padding: 2% 0 0 46%; 
+    background-color: transparent;
 }
 
 .container {
@@ -38,10 +53,19 @@ body {
     gap: 80px;
 }
 
+.options__link__number {
+    color: var(--vermelho);
+    font-weight: 700;
+}
+
+.options__link__text {
+    color: var(--preto);
+    text-transform: uppercase;
+}
+
 .options__link {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: white;
+    font-size: 0.8rem;
+    font-weight: 400;
     text-decoration: none;
 }
 
@@ -52,12 +76,18 @@ body {
     justify-content: space-between;
 }
 
-.about__title {
-    font-size: 2.25rem;
+.options__title__number {
+    color: var(--verde);
+    font-weight: 700;
 }
 
-.about__subtitle {
-    font-size: 1rem;
+.about__subtitle__name {
+    font-size: 1.5rem;
+}
+
+.options__title__text {
+    background: var(--vermelho-primaria);
+    padding: 3px 6px;
 }
 
 .about__text {
@@ -73,25 +103,26 @@ body {
 }
 
 .cv__link {
-    display: flex;
-    align-items: start;
-    justify-content: start;
+    display: center;
+    align-items: center;
+    justify-content: center;
     gap: 16px;
-    border: 1px solid var(--preto-claro);
+    border: 1px solid var(--preto);
     width: 17%;
     text-align: start;
     border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 0.8rem;
+    font-weight: 700;
     padding: 12px 20px;
     text-decoration: none;
-    color: yellowgreen;
+    text-transform: uppercase;
+    color: var(--verde);
     background-color: transparent;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .cv__link:hover {
-    background-color: var(--preto-claro);
+    background-color: var(--vermelho);
     color: white;
 }
 
@@ -99,13 +130,6 @@ body {
     padding: 5% 15%;
     display: flex;
     justify-content: flex-start;
-    background-color: var(--branco-2);
-}
-
-.highlight {
-    background: yellowgreen;
-    padding: 3px 6px;
-    font-weight: bold;
 }
 
 .menu {
@@ -118,15 +142,24 @@ body {
 .menu button {
     background: none;
     border: none;
-    font-size: 16px;
+    font-size: 18px;
     cursor: pointer;
-    font-weight: bold;
-    color: var(--cinza);
+}
+
+.menu button:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    width: 90px; 
+    height: 1px; 
+    background-color: black;
+    margin-left: 50px;
+    vertical-align: middle;
 }
 
 .menu button.active {
     color: black;
     text-decoration: none;
+    font-weight: bold;
 }
 .carousel {
     position: relative;
@@ -135,38 +168,40 @@ body {
 .carousel-item {
     display: none;
 }
+
 .carousel-item.active {
     display: block;
+}
+
+.logo__image {
+    width: 80px;
+    height: auto;
 }
 
 .education {
     padding: 5% 15%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--cinza-claro);
+    justify-content: flex-start;
 }
 
 .projects {
     padding: 5% 15%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--branco-2);
+    justify-content: flex-start;
+    background-color: var(--preto-primaria);
 }
 
 .contact {
     padding: 5% 15%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--branco-1);
+    justify-content: flex-start;
+    background-color: var(--verde-primaria);
 }
 
 .footer {
     padding: 24px;
     color: var(--cinza-claro);
-    background-color: var(--preto-claro);
+    background-color: var(--preto-terciaria);
     text-align: center;
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
