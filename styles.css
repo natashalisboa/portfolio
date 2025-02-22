@@ -17,17 +17,17 @@
     --preto-primaria: #131313;
     --preto-secundaria: #1A1A19;
     --preto-terciaria: #121212;
-    --cinza: #474646;
-    --cinza-medio: #828282;
-    --cinza-claro: #858585;
-    --vermelho: #8E1616;
     --vermelho-primaria: #AB3130;
-    --vermelho-secundaria: #67191F;
-    --verde: #31511E;
-    --verde-primaria: #294122;
-    --verde-secundaria: #162114; 
-    --cor-destaque: #EEDBBF;
-    --cor-destaque-primaria: #858585;
+    /* --cor-destaque: #C6C2F2; */
+    /* --cor-destaque: #D86072; */
+    /* --cor-destaque: #D6DC82; */
+    --cor-destaque: #D2E0FB;
+    /* --cor-destaque: #B6BBC4; */
+}
+
+::selection {
+    background: #B6BBC4; /* Cinza claro */
+    color: #000; /* Texto preto para contraste */
 }
 
 *{
