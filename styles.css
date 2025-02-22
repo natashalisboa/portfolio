@@ -7,9 +7,9 @@
 @import url("styles/rodape.css");
 
 :root {
-    --fonte-principal: "Poppins";
-    --fonte-secundaria: "Josefin Sans";
-    --fonte-terciaria: "";
+    --fonte-primaria: "Geist";
+    --fonte-secundaria: "Hind";
+    --fonte-terciaria: "Poppins";
     --branco: #FFFFFF;
     --branco-primaria: #EEEEEE;
     --branco-secundaria: #f7f7f7;
@@ -28,6 +28,7 @@
     --verde-primaria: #294122;
     --verde-secundaria: #162114; 
     --cor-destaque: #EEDBBF;
+    --cor-destaque-primaria: #858585;
 }
 
 *{
@@ -40,7 +41,7 @@ body {
     background-color: var(--branco-secundaria);
     font-size: 16px;
     font-weight: 400;
-    font-family: var(--fonte-principal);
+    font-family: var(--fonte-primaria);
 }
 
 .header {
@@ -68,6 +69,10 @@ body {
     font-weight: 400;
     text-decoration: none;
 }
+.options__link:hover {
+    background-color: var(--cor-destaque);
+    font-weight: bold;
+}
 
 .presentation {
     padding: 5% 15%;
@@ -77,7 +82,7 @@ body {
 }
 
 .options__title__number {
-    color: var(--verde);
+    color: var(--vermelho);
     font-weight: 700;
 }
 
@@ -86,8 +91,8 @@ body {
 }
 
 .options__title__text {
-    background: var(--vermelho-primaria);
-    padding: 3px 6px;
+    background: var(--cor-destaque);
+    padding: 2px 6px;
 }
 
 .about__text {
@@ -123,7 +128,7 @@ body {
 
 .cv__link:hover {
     background-color: var(--vermelho);
-    color: white;
+    color: var(--branco);
 }
 
 .work {
@@ -151,13 +156,13 @@ body {
     display: inline-block;
     width: 90px; 
     height: 1px; 
-    background-color: black;
+    background-color: var(--preto);
     margin-left: 50px;
     vertical-align: middle;
 }
 
 .menu button.active {
-    color: black;
+    color: var(--preto);
     text-decoration: none;
     font-weight: bold;
 }
@@ -165,37 +170,119 @@ body {
     position: relative;
 }
 
-.carousel-item {
+.carousel__item {
     display: none;
 }
 
-.carousel-item.active {
+.carousel__item.active {
     display: block;
 }
 
-.logo__image {
-    width: 80px;
-    height: auto;
+.workplace {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
 }
 
-.education {
-    padding: 5% 15%;
+.logo__image {
+    width: 200px;
+    border-radius: 1rem;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.workplace__info {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container__education { 
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 40px; 
+    padding: 5% 15%; 
+}
+
+.education, .courses {
+    width: 45%;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.education-item {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
 }
 
 .projects {
     padding: 5% 15%;
     display: flex;
     justify-content: flex-start;
-    background-color: var(--preto-primaria);
+    padding-bottom: 0;
+}
+
+.projetos__container {
+    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 5% 15%;
+}
+
+.projeto__card {
+    background-color: transparent;
+    border: 1px solid var(--preto);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.projeto__card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.projeto__card h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: var(--preto);
+}
+
+.projeto__card p {
+    font-size: 1em;
+    color: var(--preto);
+}
+
+@media (max-width: 1024px) {
+    .projetos__container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .projetos__container {
+        grid-template-columns: repeat(1, 1fr); 
+    }
 }
 
 .contact {
     padding: 5% 15%;
     display: flex;
     justify-content: flex-start;
-    background-color: var(--verde-primaria);
 }
 
 .footer {
