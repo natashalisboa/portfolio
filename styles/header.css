@@ -1,0 +1,29 @@
+.header {
+    padding: 2% 0 0 46%; 
+    background-color: transparent;
+}
+
+.container {
+    display: flex;
+    gap: 80px;
+}
+
+.options__link__number {
+    color: var(--vermelho);
+    font-weight: 700;
+}
+
+.options__link__text {
+    color: var(--preto);
+    text-transform: uppercase;
+}
+
+.options__link {
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+.options__link:hover {
+    background-color: var(--cor-destaque);
+    font-weight: bold;
+}

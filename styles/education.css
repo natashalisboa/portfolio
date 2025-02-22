@@ -1,0 +1,29 @@
+.container__education { 
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 40px; 
+    padding: 5% 15%; 
+}
+
+.education, .courses {
+    width: 45%;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.education-item {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
