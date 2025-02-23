@@ -17,17 +17,16 @@
     --preto-primaria: #131313;
     --preto-secundaria: #1A1A19;
     --preto-terciaria: #121212;
-    --vermelho-primaria: #AB3130;
-    /* --cor-destaque: #C6C2F2; */
-    /* --cor-destaque: #D86072; */
-    /* --cor-destaque: #D6DC82; */
-    --cor-destaque: #D2E0FB;
-    /* --cor-destaque: #B6BBC4; */
+    --vermelho: #8F0000;
+    --titulo-destaque: #F4CCE9;
+    --cor-destaque: #D17D98;
+    --cor-destaque-selecionada: #B6BBC4;
+
 }
 
 ::selection {
-    background: #B6BBC4; /* Cinza claro */
-    color: #000; /* Texto preto para contraste */
+    background: var(--cor-destaque-selecionada);
+    color: var(--preto);
 }
 
 *{
@@ -41,4 +40,15 @@ body {
     font-size: 16px;
     font-weight: 400;
     font-family: var(--fonte-primaria);
+    color: var(--preto-primaria);
+}
+
+.options__title__number {
+    color: var(--preto);
+    font-weight: 700;
+}
+
+.options__title__text {
+    background: var(--titulo-destaque);
+    padding: 2px 6px;
 }

@@ -11,6 +11,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 5% 15%;
+    padding-top: 40px;
 }
 
 .projeto__card {

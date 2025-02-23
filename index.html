@@ -20,16 +20,16 @@
 
     <header class="header">
         <nav class="container">
-            <a class="options__link" href="index.html">
+            <a class="options__link" href="#about">
                 <span class="options__link__number">01.</span> <span class="options__link__text">Sobre</span>
             </a>
-            <a class="options__link" href="#">
+            <a class="options__link" href="#work">
                 <span class="options__link__number">02.</span> <span class="options__link__text">Trabalho</span>
             </a>
-            <a class="options__link" href="#">
+            <a class="options__link" href="#education">
                 <span class="options__link__number">03.</span> <span class="options__link__text">Educação</span>
             </a>
-            <a class="options__link" href="#">
+            <a class="options__link" href="#projects">
                 <span class="options__link__number">04.</span> <span class="options__link__text">Projetos</span>
             </a>
         </nav>
@@ -37,11 +37,33 @@
 
 
     <main class="presentation">
-        <section class="about">
+        <section id="about">
             <h2><span class="options__title__number">01.</span> <span class="options__title__text">Sobre</span></h2>
-
             <h3 class="about__subtitle__name">Natasha Lisboa</h3>
             <h3 class="about__subtitle">Desenvolvedora Full-Stack e Criadora de Conteúdo</h3>
+            <div class="social__links">
+                <a href="mailto:contato@natashalisboa.com">
+                    <img src="assets/icons/email.svg" alt="E-mail">
+                </a>
+                <a href="https://www.linkedin.com/in/natashalisboa/" target="_blank">
+                    <img src="assets/icons/linkedin.svg" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/natashalisboa" target="_blank">
+                    <img src="assets/icons/github.svg" alt="GitHub">
+                </a>
+                <a href="https://www.instagram.com/na2kstudies/" target="_blank">
+                    <img src="assets/icons/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://na2kstudies.medium.com/" target="_blank">
+                    <img src="assets/icons/medium.svg" alt="Medium">
+                </a>
+                <a href="https://dev.to/na2kstudies" target="_blank">
+                    <img src="assets/icons/dev-to.svg" alt="Dev.to">
+                </a>
+                <a href="https://na2kstudies.substack.com/" target="_blank">
+                    <img src="assets/icons/substack.svg" alt="Substack">
+                </a>
+            </div>
             <p class="about__text">Formada em Lazer e Turismo pela EACH-USP (2018) e em Análise e Desenvolvimento de
                 Sistemas pela Universidade
                 Presbiteriana Mackenzie (2021), pós graduanda em Full-Stack (2025) pela FIAP, morando e trabalhando em
@@ -55,19 +77,64 @@
                 pelo desenvolvimento de projetos práticos e pela contribuição para a democratização do acesso à
                 tecnologia.
             </p>
-            <p>
-                e-mail: contato@natashalisboa.com | número: 11 984164333
+            <p class="skills">
+                
+            <ul class="skills__list">
+                <li>
+                    <img alt="Visual Studio Code" width="26px"
+                        src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png">
+                </li>
+                <li>
+                    <img alt="Android Studio" width="26px"
+                        src="https://developer.android.com/static/studio/images/new-studio-logo-1_2880.png">
+                </li>
+                <li>
+                    <img alt="Flutter" width="26px"
+                        src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg">
+                </li>
+                <li>
+                    <img alt="Dart" width="26px" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg">
+                </li>
+                <li>
+                    <img alt="HTML5" width="26px"
+                        src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png">
+                </li>
+                <li>
+                    <img alt="CSS3" width="26px"
+                        src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png">
+                </li>
+                <li>
+                    <img alt="JavaScript" width="26px"
+                        src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png">
+                </li>
+                <li>
+                    <img alt="Firebase" width="26px" src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg">
+                </li>
+                <li>
+                    <img alt="Figma" width="26px" src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg">
+                </li>
+                <li>
+                    <img alt="Android" width="26px"
+                        src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/android/android.png">
+                </li>
+                <li>
+                    <img alt="Git" width="26px" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg">
+                </li>
+            </ul>
             </p>
-            <p>Skills: blah</p>
-            <p>e-mail | linkedin | github | insta | medium | dev.to | stack</p>
 
+            <div class="buttons">
+                <a class="cv__button" href="/caminho/para/download.pdf" target="_blank">Baixar Currículo</a>
+                <a class="email__button" href="mailto:contato@natashalisboa.com" target="_blank">Enviar E-mail</a>
+                <a class="whatsapp__button" href="https://wa.me/11984164333" target="_blank">Enviar Whatsapp</a>
+            </div>
 
-            <a class="cv__link" href="/caminho/para/download.pdf">Currículo</a>
         </section>
         <img class="profile__image" src="./assets/img/natasha_profile.jpg" alt="Foto da Natasha Lisboa">
     </main>
 
-    <section class="work">
+    <section id="work">
+        <section class="work">
         <div class="work__container">
             <h2><span class="options__title__number">02.</span> <span class="options__title__text">Trabalho</span></h2>
             <br>
@@ -146,21 +213,22 @@
 
 
     </section>
-    <section>
+</section>
+    <section id="education">
         <div class="container__education">
             <div class="education">
                 <h2><span class="options__title__number">03.1</span> <span class="options__title__text">Educação</span>
                 </h2>
-                <div class="education-item">
+                <div class="education__item">
                     <h3>Faculdade de Informática e Administração Paulista (FIAP)</h3>
                     <p>Pós-Tech em Desenvolvimento Full-Stack | 2025
                     </p>
                 </div>
-                <div class="education-item">
+                <div class="education__item">
                     <h3>Universidade Presbiteriana Mackenzie</h3>
                     <p>Tecnólogo em Análise e Desenvolvimento de Sistemas | 2019 — 2021</p>
                 </div>
-                <div class="education-item">
+                <div class="education__item">
                     <h3>Universidade de São Paulo (USP)</h3>
                     <p>Bacharel em Lazer e Turismo | 2014 — 2018
                     </p>
@@ -171,16 +239,16 @@
                 <h2><span class="options__title__number">03.2</span> <span class="options__title__text">Cursos
                         Relevantes</span></h2>
                 <ul>
-                    <li><strong>Bootcamp Desenvolvedor(a) Mobile Multiplataforma</strong> — IGTI (2022)</li>
-                    <li><strong>Trilha Flutter </strong> — Alura (2021)</li>
-                    <li><strong>Trilha Front-end</strong> — Alura (2020)</li>
-                    <li><strong>Eu Progr{Amo} | Desenvolvimento Web</strong> — Programaria (2018)</li>
+                    <li class="education__item"><strong>Bootcamp Desenvolvedor(a) Mobile Multiplataforma</strong> — IGTI (2022)</li>
+                    <li class="education__item"><strong>Trilha Flutter </strong> — Alura (2021)</li>
+                    <li class="education__item"><strong>Trilha Front-end</strong> — Alura (2020)</li>
+                    <li class="education__item"><strong>Eu Progr{Amo} | Desenvolvimento Web</strong> — Programaria (2018)</li>
                 </ul>
             </div>
         </div>
 
     </section>
-    <section>
+    <section id="projects">
         <h2 class="projects"><span class="options__title__number">04.</span> <span
                 class="options__title__text">Projetos</span></h2>
 

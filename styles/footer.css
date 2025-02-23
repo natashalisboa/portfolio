@@ -1,7 +1,10 @@
 .footer {
+    border: 1.5rem;
+    border-top: 1rem;
+    border-color: aqua;
     padding: 24px;
     color: var(--branco);
-    background-color: var(--preto);
+    background-color: var(--vermelho);
     text-align: center;
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
