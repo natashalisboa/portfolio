@@ -27,3 +27,9 @@
     background-color: var(--cor-destaque);
     font-weight: bold;
 }
+
+@media (max-width: 1024px) {
+    .header {
+        display: none;
+    }
+}

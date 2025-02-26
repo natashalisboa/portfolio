@@ -39,13 +39,61 @@
 }
 
 @media (max-width: 1024px) {
+    .projects {
+        justify-content: center;
+        text-align: center;
+    }
+
     .projetos__container {
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: 1fr; 
+        padding: 5% 10%;
     }
 }
 
 @media (max-width: 768px) {
+    .projects {
+        padding: 5% 8%;
+    }
+
     .projetos__container {
-        grid-template-columns: repeat(1, 1fr); 
+        gap: 15px;
+        padding: 5%;
+    }
+
+    .projeto__card {
+        padding: 15px;
+    }
+
+    .projeto__card h3 {
+        font-size: 1.3em;
+    }
+
+    .projeto__card p {
+        font-size: 0.9em;
+    }
+
+    .projeto__card button {
+        width: 100%;
+        font-size: 0.9em;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects {
+        padding: 5%;
+    }
+
+    .projeto__card h3 {
+        font-size: 1.2em;
+    }
+
+    .projeto__card p {
+        font-size: 0.85em;
+    }
+
+    .projeto__card button {
+        font-size: 0.85em;
+        padding: 8px;
     }
 }

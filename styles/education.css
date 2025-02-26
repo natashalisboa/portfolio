@@ -27,3 +27,74 @@ ul {
 li {
     margin-bottom: 5px;
 }
+
+@media (max-width: 1024px) {
+    .container__education {
+        flex-direction: column;
+        align-items: center;
+        padding: 5% 10%;
+    }
+
+    .education, .courses {
+        width: 100%;
+    }
+
+    .education__item {
+        justify-content: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    ul {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    li {
+        list-style-type: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .container__education {
+        padding: 5% 8%;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    .education__item {
+        margin-top: 15px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    ul {
+        padding-left: 0;
+    }
+
+    li {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container__education {
+        padding: 5%;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .education__item {
+        margin-top: 10px;
+    }
+
+    li {
+        font-size: 0.85em;
+    }
+}
