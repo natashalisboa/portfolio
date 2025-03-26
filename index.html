@@ -39,9 +39,11 @@
         <section id="about">
             <h2><span class="options__title__number">01.</span> <span class="options__title__text">Sobre</span></h2>
             <h3 class="about__subtitle__name">Natasha Lisboa</h3>
-            <h3 class="about__subtitle">Desenvolvedora Full-Stack e Criadora de Conteúdo</h3>
+            <h3 class="about__subtitle">Desenvolvedora Mobile</h3>
+            <h4 class="about__second__subtitle">Especialidade em Desenvolvimento Mobile com Flutter</h4>
+            <!-- <h3 class="about__subtitle">Desenvolvedora Full-Stack e Criadora de Conteúdo</h3> -->
             <div class="social__links">
-                <a href="mailto:contato@natashalisboa.com">
+                <a href="mailto:hello@natashalisboa.com">
                     <img src="assets/icons/email.svg" alt="E-mail">
                 </a>
                 <a href="https://www.linkedin.com/in/natashalisboa/" target="_blank">
@@ -63,21 +65,28 @@
                     <img src="assets/icons/substack.svg" alt="Substack">
                 </a>
             </div>
-            <p class="about__text">Formada em Lazer e Turismo pela EACH-USP (2018) e em Análise e Desenvolvimento de
-                Sistemas pela Universidade
-                Presbiteriana Mackenzie (2021), pós graduanda em Full-Stack (2025) pela FIAP, morando e trabalhando em
-                São
-                Paulo. Sou apaixonada por viagens, idiomas, culturas e tecnologia, áreas que despertam minha
-                criatividade.
-                Movida por desafios e inovação, estou construindo uma base sólida em tecnologias e linguagens de
-                front-end e
-                back-end, com experiência profissional no desenvolvimento mobile. Minha jornada de aprendizado é
-                orientada
-                pelo desenvolvimento de projetos práticos e pela contribuição para a democratização do acesso à
-                tecnologia.
-            </p>
+            <div class="profile__container">
+                <p class="about__text">
+                    Formada em Lazer e Turismo pela EACH-USP (2018) e em Análise e Desenvolvimento de
+                    Sistemas pela Universidade
+                    Presbiteriana Mackenzie (2021), e pós graduanda em Full-Stack (2025) pela FIAP, morando e
+                    trabalhando
+                    em
+                    São
+                    Paulo.<br><br>
+                    Sou apaixonada por viagens, idiomas, culturas e tecnologia, áreas que despertam minha
+                    criatividade.<br><br>
+                    Movida por desafios e inovação, estou construindo uma base sólida em tecnologias e linguagens de
+                    front-end e back-end, com experiência profissional no desenvolvimento mobile. <br><br>
+                    Minha jornada de aprendizado é
+                    orientada pelo desenvolvimento de projetos práticos e pela contribuição para a democratização do
+                    acesso à
+                    tecnologia.
+                </p>
+                <img class="profile__image" src="./assets/img/natasha_profile.jpg" alt="Foto da Natasha Lisboa">
+            </div>
             <p class="skills">
-                
+
             <ul class="skills__list">
                 <li>
                     <img alt="Visual Studio Code" width="26px"
@@ -124,95 +133,113 @@
 
             <div class="buttons">
                 <a class="cv__button" href="assets/cv_natasha_lisboa.pdf" target="_blank">Baixar Currículo</a>
-                <a class="email__button" href="mailto:contato@natashalisboa.com" target="_blank">Enviar E-mail</a>
+                <a class="email__button" href="mailto:hello@natashalisboa.com" target="_blank">Enviar E-mail</a>
                 <a class="whatsapp__button" href="https://wa.me/11984164333" target="_blank">Enviar Whatsapp</a>
             </div>
 
         </section>
-        <img class="profile__image" src="./assets/img/natasha_profile.jpg" alt="Foto da Natasha Lisboa">
     </main>
 
     <section id="work">
         <section class="work">
-        <div class="work__container">
-            <h2><span class="options__title__number">02.</span> <span class="options__title__text">Trabalho</span></h2>
-            <br>
-            <div class="menu">
-                <button onclick="showExperience(0)">PBF</button>
-                <button onclick="showExperience(1)">Teresa Perez Tours</button>
-                <button class="active" onclick="showExperience(2)">Accenture</button>
-            </div>
+            <div class="work__container">
+                <h2><span class="options__title__number">02.</span> <span class="options__title__text">Trabalho</span>
+                </h2>
+                <br>
+                <div class="menu">
+                    <button onclick="showExperience(0)">PBF</button>
+                    <button onclick="showExperience(1)">Teresa Perez Tours</button>
+                    <button class="active" onclick="showExperience(2)">Accenture</button>
+                </div>
 
-            <div class="carousel">
-                <div class="carousel__item">
-                    <div class="workplace">
-                        <img class="logo__image" src="./assets/logos/pbf_logo.png" alt="Logo da PBF">
+                <div class="carousel">
+                    <div class="carousel__item">
+                        <div class="workplace">
+                            <img class="logo__image" src="./assets/logos/pbf_logo.png" alt="Logo da PBF">
 
-                        <div class="workplace__info">
-                            <h3>PBF | Professora de Inglês</h3>
-                            <p>Fev 2015 — Nov 2016</p>
-                            <p>A PBF é uma renomada rede de cursos de inglês e espanhol, fundada em 1965, em São Paulo.
-                                Em 1983, a rede foi adquirida pelo Professor Fisk, um especialista em ensino de idiomas
-                                com reconhecimento desde a década de 60.</p>
-                            <p>Minhas principais atividades:
-                                Planejamento e condução de aulas para diversos níveis e faixas etárias abrangendo desde
-                                crianças pequenas até adultos, além de módulos específicos voltados para profissionais
-                                das áreas de turismo e negócios internacionais. Também fui responsável pelo
-                                monitoramento do desempenho dos alunos, utilizando atividades em sala, tarefas de casa e
-                                testes como ferramentas de avaliação. Adicionalmente, conduzi aulas de reforço e
-                                reposição conforme necessário e participei no planejamento e organização de eventos de
-                                acordo com o calendário estadounidense.</p>
+                            <div class="workplace__info">
+                                <h3>PBF | Professora de Inglês</h3>
+                                <p>Fev 2015 — Nov 2016</p>
+                                <p>A PBF é uma renomada rede de cursos de inglês e espanhol, fundada em 1965, em São
+                                    Paulo.
+                                    Em 1983, a rede foi adquirida pelo Professor Fisk, um especialista em ensino de
+                                    idiomas
+                                    com reconhecimento desde a década de 60.</p>
+                                <p>Minhas principais atividades:
+                                    Planejamento e condução de aulas para diversos níveis e faixas etárias abrangendo
+                                    desde
+                                    crianças pequenas até adultos, além de módulos específicos voltados para
+                                    profissionais
+                                    das áreas de turismo e negócios internacionais. Também fui responsável pelo
+                                    monitoramento do desempenho dos alunos, utilizando atividades em sala, tarefas de
+                                    casa e
+                                    testes como ferramentas de avaliação. Adicionalmente, conduzi aulas de reforço e
+                                    reposição conforme necessário e participei no planejamento e organização de eventos
+                                    de
+                                    acordo com o calendário estadounidense.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel__item">
+                        <div class="workplace">
+                            <img class="logo__image" src="./assets/logos/teresa_perez_tours_logo.jpg"
+                                alt="Logo da Teresa Perez Tours">
+
+                            <div class="workplace__info">
+                                <h3>Teresa Perez Tours | Assistente de Operações</h3>
+                                <p>Jan 2018 — Jul 2019</p>
+                                <p>A Teresa Perez Tours é uma agência e operadora de viagens de luxo, especializada em
+                                    criar
+                                    roteiros personalizados para clientes exigentes que buscam experiências de viagem
+                                    únicas
+                                    e serviços diferenciados.</p>
+                                <p>Minhas principais atividades:
+                                    Organização logística de viagens, negociação de preços, condições de pagamento e
+                                    disponibilidade com fornecedores para reservas de hospedagem e serviços.
+                                    Gerenciamento
+                                    eficiente de imprevistos e resolução de problemas. Elaboração de roteiros detalhados
+                                    e
+                                    materiais de viagem personalizados de acordo com o perfil de cada cliente.
+                                    Participação
+                                    em treinamentos nacionais e internacionais buscando aprimorar continuamente
+                                    habilidades
+                                    e conhecimentos. Trabalho em equipe, visando sempre a excelência no atendimento.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel__item active">
+                        <div class="workplace">
+                            <img class="logo__image" src="./assets/logos/accenture_logo.jpg" alt="Logo da Accenture">
+
+                            <div class="workplace__info">
+                                <h3>Accenture | Developer</h3>
+                                <p>Mar 2020 — Jun 2021 | Estágio</p>
+                                <p>Jun 2021 — o momento | Analista</p>
+                                <p>Atuando como Desenvolvedora Mobile (front-end) em um aplicativo de simulação de
+                                    financiamento de veículos, garantindo uma experiência Omnichannel, implementando
+                                    novas
+                                    funcionalidades visando a automação e simplificação do produto, fazendo a manutenção
+                                    e o
+                                    desenvolvimento de melhorias e corrigindo bugs, utilizando Kanban.</p>
+                                <p>Além disso, participo como parte da mentoria na iniciativa RYC em Flutter, um projeto
+                                    voltado para ensinar Flutter a iniciantes. Durante o programa, revisei e repassei
+                                    todo o
+                                    código do curso com os inscritos da iniciativa, ofereci suporte para esclarecer
+                                    dúvidas
+                                    e ajudar no desenvolvimento das habilidades dos alunos, consolidando conceitos e
+                                    boas
+                                    práticas. [Repositório: https://github.com/natashalisboa/udemy-despesas-pessoais]
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="carousel__item">
-                    <div class="workplace">
-                        <img class="logo__image" src="./assets/logos/teresa_perez_tours_logo.jpg"
-                            alt="Logo da Teresa Perez Tours">
 
-                        <div class="workplace__info">
-                            <h3>Teresa Perez Tours | Assistente de Operações</h3>
-                            <p>Jan 2018 — Jul 2019</p>
-                            <p>A Teresa Perez Tours é uma agência e operadora de viagens de luxo, especializada em criar
-                                roteiros personalizados para clientes exigentes que buscam experiências de viagem únicas
-                                e serviços diferenciados.</p>
-                            <p>Minhas principais atividades:
-                                Organização logística de viagens, negociação de preços, condições de pagamento e
-                                disponibilidade com fornecedores para reservas de hospedagem e serviços. Gerenciamento
-                                eficiente de imprevistos e resolução de problemas. Elaboração de roteiros detalhados e
-                                materiais de viagem personalizados de acordo com o perfil de cada cliente. Participação
-                                em treinamentos nacionais e internacionais buscando aprimorar continuamente habilidades
-                                e conhecimentos. Trabalho em equipe, visando sempre a excelência no atendimento.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel__item active">
-                    <div class="workplace">
-                        <img class="logo__image" src="./assets/logos/accenture_logo.jpg" alt="Logo da Accenture">
-
-                        <div class="workplace__info">
-                            <h3>Accenture | Developer</h3>
-                            <p>Mar 2020 — Jun 2021 | Estágio</p>
-                            <p>Jun 2021 — o momento | Analista</p>
-                            <p>Atuando como Desenvolvedora Mobile (front-end) em um aplicativo de simulação de
-                                financiamento de veículos, garantindo uma experiência Omnichannel, implementando novas
-                                funcionalidades visando a automação e simplificação do produto, fazendo a manutenção e o
-                                desenvolvimento de melhorias e corrigindo bugs, utilizando Kanban.</p>
-                            <p>Além disso, participo como parte da mentoria na iniciativa RYC em Flutter, um projeto
-                                voltado para ensinar Flutter a iniciantes. Durante o programa, revisei e repassei todo o
-                                código do curso com os inscritos da iniciativa, ofereci suporte para esclarecer dúvidas
-                                e ajudar no desenvolvimento das habilidades dos alunos, consolidando conceitos e boas
-                                práticas. [Repositório: https://github.com/natashalisboa/udemy-despesas-pessoais]</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
+        </section>
     </section>
-</section>
     <section id="education">
         <div class="container__education">
             <div class="education">
@@ -238,10 +265,12 @@
                 <h2><span class="options__title__number">03.2</span> <span class="options__title__text">Cursos
                         Relevantes</span></h2>
                 <ul>
-                    <li class="education__item"><strong>Bootcamp Desenvolvedor(a) Mobile Multiplataforma</strong> — IGTI (2022)</li>
+                    <li class="education__item"><strong>Bootcamp Desenvolvedor(a) Mobile Multiplataforma</strong> — IGTI
+                        (2022)</li>
                     <li class="education__item"><strong>Trilha Flutter </strong> — Alura (2021)</li>
                     <li class="education__item"><strong>Trilha Front-end</strong> — Alura (2020)</li>
-                    <li class="education__item"><strong>Eu Progr{Amo} | Desenvolvimento Web</strong> — Programaria (2018)</li>
+                    <li class="education__item"><strong>Eu Progr{Amo} | Desenvolvimento Web</strong> — Programaria
+                        (2018)</li>
                 </ul>
             </div>
         </div>
