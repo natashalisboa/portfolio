@@ -1,5 +1,5 @@
 .presentation {
-    padding: 5% 15%;
+    padding: 5% 20%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -64,7 +64,7 @@
 
 .profile__image {
     width: 35%;
-    max-width: 300px;
+    max-width: 250px;
     border-radius: 1rem;
     align-self: stretch;
     object-fit: cover;

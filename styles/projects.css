@@ -1,5 +1,5 @@
 .projects {
-    padding: 5% 15%;
+    padding: 5% 20%;
     display: flex;
     justify-content: flex-start;
     padding-bottom: 0;
@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    padding: 5% 15%;
+    padding: 5% 20%;
     padding-top: 40px;
 }
 
