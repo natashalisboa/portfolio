@@ -65,6 +65,17 @@
     gap: 5px;
 }
 
+.repo {
+    text-decoration: none;
+    color: var(--cor-destaque);
+    font-weight: bold;
+}
+.repo:hover {
+    background-color: var(--titulo-destaque);
+    color: var(--preto); 
+    font-weight: bolder;
+}
+
 @media (max-width: 1024px) {
     .work {
         padding: 5% 10%;
