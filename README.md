@@ -1,3 +1,5 @@
+<samp>
+
 # Portfólio (v1)
 <p>A versão inicial do meu portfólio é focada em reunir as principais informações profissionais de forma clara e organizada. O design segue um estilo inspirado em artigos acadêmicos, com elementos destacados como se fossem trechos grifados em livros — um hábito que costumo aplicar em leituras técnicas.</p>
 
@@ -25,3 +27,5 @@ A proposta é um design clean e minimalista, priorizando apenas as informações
 <p>⛔ Integrar um framework para aprimorar a estrutura e funcionalidades, aplicando os conhecimentos adquiridos na pós-graduação em desenvolvimento Full-Stack.</p>
 <p>⛔ Adicionar uma seção dedicada aos meus projetos.</p>
 <p>⛔ Melhorar as informações do footer.</p>
+
+</samp>
